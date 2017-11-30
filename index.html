@@ -10,7 +10,21 @@
 		<meta name="format-detection" content="address=no" />
 		<meta charset="UTF-8">
 		<title></title>
+	<script type="text/javascript">
+		function refresh() {
+			var deviceWidth = document.documentElement.clientWidth;
+			if(deviceWidth > 750) {
+				document.documentElement.style.fontSize = 750 / 7.5 + "px";
 
+			} else {
+				document.documentElement.style.fontSize = deviceWidth / 7.5 + "px";
+			}
+		}
+		refresh();
+		window.onresize = function() {
+			refresh();
+		}
+	</script>
 	</head>
 	<style type="text/css">
 		* {
@@ -215,20 +229,6 @@
 		</div>
 		
 	</body>
-	<script type="text/javascript">
-		function refresh() {
-			var deviceWidth = document.documentElement.clientWidth;
-			if(deviceWidth > 750) {
-				document.documentElement.style.fontSize = 750 / 7.5 + "px";
 
-			} else {
-				document.documentElement.style.fontSize = deviceWidth / 7.5 + "px";
-			}
-		}
-		refresh();
-		window.onresize = function() {
-			refresh();
-		}
-	</script>
 
 </html>
