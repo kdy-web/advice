@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="full-screen" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="address=no" />
+		<meta charset="UTF-8">
+		<title></title>
+
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.top_box {
+			width: 100%;
+			height: 4.8rem;
+			position: relative;
+		}
+		
+		.circle_bigbox {
+			width: 3.42rem;
+			height: 3.42rem;
+			border-radius: 50%;
+			border: 0.09rem solid rgba(43, 148, 250, 0.60);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		
+		.circle_box {
+			width: 3.26rem;
+			height: 3.26rem;
+			border: 0.09rem solid rgba(43, 148, 250, 0.80);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%;
+		}
+		
+		.circle_content {
+			border-radius: 50%;
+			width: 3.1rem;
+			height: 3.1rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			border: 0.09rem solid #2B94FA;
+		}
+		
+		.circle_count {
+			font-size: 0.4rem;
+			color: #2B94FA;
+			text-align: center;
+			margin-top: 1rem;
+			margin-bottom: 0.1rem;
+		}
+		
+		.remind_box img {
+			width: 0.34rem;
+			height: 0.3rem;
+			position: relative;
+			top: 0.04rem;
+		}
+		
+		.remind_box {
+			font-size: 0.24rem;
+			position: absolute;
+			right: 0.3rem;
+		}
+		
+		.remind_box span {
+			margin-left: 0.1rem;
+			color: #8E8E8E;
+			line-height: 0.24rem;
+		}
+		
+		.top {
+			height: 0.42rem;
+			margin-bottom: 0.24rem;
+		}
+		
+		.top span {
+			font-size: 0.3rem;
+			font-weight: bold;
+			color: #2B94FA;
+			float: left;
+			margin-left: 0.1rem;
+		}
+		
+		.top .ver {
+			width: 0.06rem;
+			height: 0.32rem;
+			background: #2B94FA;
+			float: left;
+			position: relative;
+			top: 0.04rem;
+			margin-left: 0.3rem;
+		}
+		 .col{
+		 	  line-height: 0.4rem;
+			font-size:0.28rem;
+			margin-bottom: 0.24rem;
+		}
+		
+		
+		
+		
+		.col_right{
+			display: inline-block;
+			width:84.3%;
+		 
+			
+             color: #232427;
+			height: 100%;
+		}
+		 .col .col_left{
+			width:11.7%;
+			text-align: center;
+			 
+			display: inline-block;
+		    height: 100%;
+		   position: relative;
+		}
+	 .col	.col_left img{
+			width: 0.34rem;
+			height: 0.3rem;
+	     position: relative;
+		}
+		
+		
+		.complete{
+			margin-top: 0.06rem;
+		}
+		.complete .col img{
+			
+			top: 0.02rem;
+		}
+		.pro{
+				margin-top: 0.06rem;
+		}
+	</style>
+
+	<body>
+		<div class="top_box">
+			<div class="circle_bigbox">
+				<div class="circle_box">
+					<div class="circle_content">
+						<p class="circle_count">4个</p>
+						<p style="color:#2B94FA ;font-size: 0.34rem;text-align: center;">可优化建议</p>
+					</div>
+				</div>
+			</div>
+			<div class="remind_box" style="top: 3.42rem;"><img src="img/advice2.png" /><span>严重错误</span></div>
+			<div class="remind_box" style="top: 3.92rem;"> <img src="img/advice1.png" /><span>建议优化</span></div>
+		</div>
+		<div class="gradient_box">
+			<div class="top">
+				<div class="ver"></div><span>
+					志愿表梯度
+				</span>
+			</div>
+			<div class="gradient_content">
+                 <div class="col">
+                 	<div class="col_left"><img src="img/advice2.png" /></div>
+                 	<div class="col_right">没有可保底的学校，建议末尾1-2所学校换成>=98%的学校</div>
+                 </div>
+                 <div class="col">
+                 <div class="col_left"><img src="img/advice1.png" /></div>
+                 <div class="col_right">没有可冲击的学校，建议填报1-2所录取概率50%-80%的学校冲一冲</div>
+                 </div>
+			</div>
+		</div>
+		<div class="complete">
+	    <div class="top">
+				<div class="ver"></div><span>
+					志愿表完整性
+				</span>
+			</div>
+			<div class="col">
+				<div class="col_left"><img src="img/advice1.png" /></div>
+				<div class="col_right">本科第一批学校没填满，建议填满</div>
+			</div>
+			<div class="col">
+				<div class="col_left"><img src="img/advice1.png" /></div>
+				<div class="col_right">志愿专业没填满，建议填满</div>
+			</div>
+			
+		</div>
+		<div class="pro">
+			 <div class="top">
+				<div class="ver"></div><span>
+					专业设置合理性
+				</span>
+			</div>
+				<div class="col">
+				<div class="col_left"><img src="img/advice1.png" /></div>
+				<div class="col_right">建议部分学校专业服从调剂</div>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		function refresh() {
+			var deviceWidth = document.documentElement.clientWidth;
+			if(deviceWidth > 750) {
+				document.documentElement.style.fontSize = 750 / 7.5 + "px";
+
+			} else {
+				document.documentElement.style.fontSize = deviceWidth / 7.5 + "px";
+			}
+		}
+		refresh();
+		window.onresize = function() {
+			refresh();
+		}
+	</script>
+
+</html>
